@@ -9,19 +9,21 @@ A promise is a special JavaScript object that links the “producing code” and
   - Error myReject(error object)
 - A “consuming code” that wants the result of the “producing code” once it’s ready. Consuming code must wait until the Promise is fulfilled.
 
-````
-    let myPromise = new Promise(function(myResolve, myReject) {
-    // "Producing Code" (May take some time)
-
-    myResolve(); // when successful
-    myReject();  // when error
-    });
-
-    // "Consuming Code" (Must wait for a fulfilled Promise)
-    myPromise.then(
-    function(value) { /* code if successful */ },
-    function(error) { /* code if some error */ }
-    );
 ```javascript
+let myPromise = new Promise(function (myResolve, myReject) {
+  // "Producing Code" (May take some time)
 
-````
+  myResolve(); // when successful
+  myReject(); // when error
+});
+
+// "Consuming Code" (Must wait for a fulfilled Promise)
+myPromise.then(
+  function (value) {
+    /* code if successful */
+  },
+  function (error) {
+    /* code if some error */
+  }
+);
+```
