@@ -1,5 +1,3 @@
-## Theory
-
 # Promises
 
 A promise is a special JavaScript object that links the “producing code” and the “consuming code” together.
