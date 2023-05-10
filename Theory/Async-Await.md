@@ -5,6 +5,8 @@ Async and Await make promises easier to write.
 - async makes a function return a Promise.
 - await makes a function wait for a Promise.
 
+When a long-running task needs to be performed without blocking the main thread of execution, such as network requests or accessing a database at that time async/await is used.
+
 ## What’s the difference between Promise and Async/Await ?
 
 - Async/Await is much cleaner and readable to write as compared to Promises. Async/Await looks like Synchronous.
